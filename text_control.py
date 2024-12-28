@@ -160,7 +160,6 @@ def style_transfer(latent,stage='texture',prompt1="a house at a lake",prompt2="p
     image=Image.fromarray(image)
     image.save(save_path)
     
-unet = UNet2DConditionModel.from_pretrained("./checkpoints/unet")
 scheduler = DDIMScheduler(beta_start=0.00085, beta_end=0.012, beta_schedule="scaled_linear", clip_sample=False, set_alpha_to_one=False)
 model = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5",use_auth_token=MY_TOKEN, scheduler=scheduler)
 model = model.to(device)
