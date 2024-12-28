@@ -1,0 +1,15 @@
+accelerate==0.25.0
+huggingface-hub==0.20.2    
+imageio==2.33.1 
+numpy  
+opencv-python 
+pillow
+pytorch
+pytorch-cuda      
+pytorch-lightning    
+scikit-image 
+scipy
+torchvision==0.16.1  
+tqdm
+transformers==4.36.2 
+diffusers==0.25.1
